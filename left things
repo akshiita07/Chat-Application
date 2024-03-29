@@ -1,0 +1,113 @@
+in index.html-
+<div class="right">
+            <i class="fa fa-user"></i>
+            <div class="rightmsg">
+                Akki: Hi guys
+            </div>
+        </div>
+
+
+        <div class="centermsg">
+            Ritesh joined the chat
+        </div>
+
+        <div class="left">
+            <i class="fa fa-user"></i>
+
+            <div class="leftmsg">
+                Saani: Hi di..how r u
+            </div>
+        </div>
+
+
+css
+.container {
+    /* border: 2px solid black; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 30px;
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    overflow-y: auto;
+
+    color: #d4d4d4;
+    background: url('/bg.jpg') no-repeat center center/cover;
+    margin-top: 10px;
+}
+
+.rightmsg {
+    /* border: 2px solid #848484; */
+    float: right;
+    clear: both;
+    color: #d4d4d4;
+    padding: 6px 10px;
+    background-color: #373737;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 0;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.leftmsg {
+    /* border: 2px solid #848484; */
+    float: left;
+    clear: both;
+    padding: 6px 10px;
+
+    color: #d4d4d4;
+    background-color: #373737;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 0;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    float: left;
+
+}
+
+.right i{
+    position: absolute;
+    right: 105px;
+    font-size: 19px;
+    color: #d4d4d4;
+}
+
+.left i {
+    position: absolute;
+    left: 105px;
+    font-size: 19px;
+    color: #d4d4d4;
+
+}
+
+.centermsg {
+    /* display: flex;
+
+    justify-content: center;
+   align-items: center; */
+
+    display: block;
+    margin: auto;
+    width: 170px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    clear: both;
+    padding: 6px 10px;
+    color: #909090;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    font-size: 17.5px;
+}

@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* ADDING HEADER CSS  */
+.header {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 0;
+
+}
+
+.header h1 {
+    font-family: 'Bacasime Antique', serif;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 1px;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 8px #49beb6, -2px -2px 8px #49beb6;
+}
+
+.header p {
+    font-family: 'Bacasime Antique', serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+
+}
+
+.header p i {
+    font-size: 17px;
+    padding-left: 8px;
+    padding-right: 5px;
+    color: #0081fb;
+}
+
+#meta {
+
+    color: #0081fb;
+}
+
+/* ADDING container CSS  */
+
+.container {
+    /* border: 2px solid black; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 30px;
+    height: 400px;
+    max-width: 80%;
+    margin: auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    background: rgba(0,0,0,0.5) url('/bg.jpg') no-repeat center center/cover;
+    background-blend-mode: darken;
+    margin-top: 10px;
+}
+
+/* from java script creating new class */
+.msg{
+    clear: both;
+    color: #d4d4d4;
+    padding: 6px 10px;
+    background-color: #373737;
+    border-radius: 10px;
+    font-size: 18px;
+    /* margin-bottom: 0; */
+    width: fit-content;
+    height: max-content;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.right i{
+    position: absolute;
+    right: 105px;
+    font-size: 19px;
+    color: #d4d4d4;
+    }
+    
+    .left i {
+    position: absolute;
+    left: 105px;
+    font-size: 19px;
+    color: #d4d4d4;
+    
+    }
+
+.bold{
+    font-weight: bold;
+    font-size: 18.5px;
+}
+
+.right {
+    float: right;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.left {
+    float: left;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+
+}   
+
+/* .msg::before{
+    width: 9px;
+    height: 7px;
+    content: "";
+    position: absolute;
+    right: 128px;
+    top: 192px;
+    border-radius: 23%;
+    box-shadow: 0 0 0 6px #373737;
+}
+.msg::before{
+    width: 12px;
+    height: 0px;
+    content: "";
+    position: absolute;
+    right: 127px;
+    top: 194.5px;
+    border-bottom-right-radius: 83px;
+    background-color: #373737;
+    box-shadow: 0 0 0 4px #373737;
+} */
+.centermsg {
+    /* display: flex;
+
+    justify-content: center;
+   align-items: center; */
+
+    margin: auto;
+    width: 170px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    clear: both;
+    padding: 6px 10px;
+    color: #909090;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    font-size: 17.5px;
+}
+
+
+
+/* ADDING send CSS  */
+
+.send {
+    /* border: 2px solid black; */
+    height: 40px;
+    width: 84.7%;
+    margin: auto;
+    margin-top: 0;
+}
+
+#sendmsg {
+    height: 40px;
+    border-top: 1.5px solid black;
+    margin: auto;
+    max-width: 100%;
+    background-color: #272727;
+}
+
+#sendmsg i{
+    
+    cursor: pointer;
+    color: #e2e2e2;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 10px;
+}
+#sendmsg input {
+    margin-top: 0;
+    width: 80%;
+    height: 100%;
+    outline: none;
+    background: none;
+    border: none;
+    padding-left: 30px;
+font-size: 16px;
+    color: white;
+}
+#sendmsg input::placeholder{
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 15px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: none;
+    color:  #d4d4d4;
+    padding: 0 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    float: right;
+    padding-top: 2px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    height: 35px;
+    width: 60px;
+}
+
+.btn::before{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: ">";
+    top: 0;
+    left: 0;
+    transition: all 0.2s;
+    width: 100%;
+    height: 100%;
+    
+}
+.btn::after{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 60px;
+    left: 0;
+    content: "Send";
+    width: 100%;
+    height: 102%;
+    transition: all 0.2s;
+    
+}
+.btn:hover::after{
+    cursor: pointer;
+    top: 0;
+    font-weight: bolder;
+
+}
+.btn:hover::before{
+    cursor: pointer;
+    top: -60px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color:#3b3a3ad7 ;
+}

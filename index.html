@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iChat</title>
+
+    <!-- adding fontawesome -->
+    <script src="https://kit.fontawesome.com/a65570bf17.js" crossorigin="anonymous"></script>
+
+    <!-- adding css  -->
+    <link rel="stylesheet" href="chat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+
+    <!-- add js file  -->
+    <script defer src="/client.js"></script>
+
+    <!-- WE HAVE TO JOIN CLIENT.JS WITH OUR INDEX.JS USING: -->
+    <script src="http://localhost:80/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="/logo.jpg" alt="logo">
+        <h1>iChat</h1>
+        <p>Powered by
+            <i class='fas fa-infinity'></i>
+            <span id="meta">Meta</span>
+
+        </p>
+    </div>
+
+    <div class="container">
+    </div>
+
+    <div class="send">
+        <form action="#" id="sendmsg">
+
+            <i class="fa fa-smile-o"></i>
+            <i class="fa fa-paperclip"></i>
+            <input type="text" name="message" id="message" placeholder="Type a message" required>
+            <button class="btn" type="submit"></button>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
